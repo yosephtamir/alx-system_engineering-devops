@@ -22,3 +22,4 @@ script 21-reverse ---reverses the user input
 script 22-users_and_homes --- is used to display users and their home directories sorted by users
 script 100-empty_casks ---finds all empty files and directories
 script 101-gifs ---- lists all the files with a .gif extrension in the current directory and sub directories
+script 102-acrostic ---decodes acrostics that use the first letter of each line
