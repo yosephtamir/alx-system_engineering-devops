@@ -12,4 +12,6 @@ script 10-no_more_js ---- is used to delate a js file in the current directory i
 script 11-directories counts the dirctories and sub directories
 script 12-newest_files ---displays the newest 10 files
 script 13-unique a script that takes a word as input and prints only words exactly appears once
+script 14-findthatword ---displays a line containing root
+script 15-countthatword ----displayes a line number contains bin
 
