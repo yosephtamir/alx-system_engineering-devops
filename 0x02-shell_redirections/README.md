@@ -9,4 +9,7 @@ script 7-file --- is used to create a directory with a name "\*\\'"Best School"\
 script 8-cwd_state --- is used to long list a file in a current directory and append to a file ls_cwd_content
 script 9-duplicate_last_line --- is used to dupplicate the last line of a file iacta and add to it
 script 10-no_more_js ---- is used to delate a js file in the current directory including the sub dirctories
+script 11-directories counts the dirctories and sub directories
+script 12-newest_files ---displays the newest 10 files
+script 13-unique a script that takes a word as input and prints only words exactly appears once
 
