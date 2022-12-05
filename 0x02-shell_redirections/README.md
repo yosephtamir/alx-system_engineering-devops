@@ -14,4 +14,5 @@ script 12-newest_files ---displays the newest 10 files
 script 13-unique a script that takes a word as input and prints only words exactly appears once
 script 14-findthatword ---displays a line containing root
 script 15-countthatword ----displayes a line number contains bin
-
+script 16-whatsnext ----displays a line containing "root" and 4 lines after it
+script 17-hidethisword ----displayes a lines not contains "bin"
