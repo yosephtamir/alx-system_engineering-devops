@@ -18,3 +18,5 @@ script 16-whatsnext ----displays a line containing "root" and 4 lines after it
 script 17-hidethisword ----displayes a lines not contains "bin"
 script 18-letteronly ---- displays all lines of the file /etc/ssh/sshd_config starting with letter
 script 19-AZ --- Replace all characters A and c from input to Z and e
+script 21-reverse ---reverses the user input
+script 22-users_and_homes --- is used to display users and their home directories sorted by users
