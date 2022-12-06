@@ -9,3 +9,4 @@ Script 7-create_global_variable ----creates global variable
 Script 8-true_knowledge performs addition
 Script 9-divide_and_rule ----devides an environment power to divide
 Script 10-love_exponent_breath ---displays a power of a number
+Script 11-binary_to_decimal ---- Is used to convert a binary number to decimal number
