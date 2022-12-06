@@ -4,4 +4,5 @@ Script 2-path ------adds '/action' to the last pass of the directory
 Script 3-paths -----counts the number of directories in the 
 Script 4-global_variables ----displays environment variables
 Script 5-local_variables---- lists all local variables and environment variables, and functions.
-Scripts 6-create_local_variable ----creates a new variable
+Script 6-create_local_variable ----creates a new variable
+Script 7-create_global_variable ----creates global variable
