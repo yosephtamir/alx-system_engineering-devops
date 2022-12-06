@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir /usr/*/action
+echo  /usr/*/action
