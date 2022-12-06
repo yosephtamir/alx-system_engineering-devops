@@ -14,3 +14,4 @@ Script 12-combinations---- prints all possible combinations of a to z and a to z
 Script 13-print_float ---shows a decimal number of NUM
 Script 100-decimal_to_hexadecimal ---is used to convert decimal to hexadecimal
 Script 101-rot13 ---encodes and decodes text using the rot13
+Script 102-odd-----prints every other line from the input ,startin with the first line.
