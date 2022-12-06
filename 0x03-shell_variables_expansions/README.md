@@ -8,3 +8,4 @@ Script 6-create_local_variable ----creates a new variable
 Script 7-create_global_variable ----creates global variable
 Script 8-true_knowledge performs addition
 Script 9-divide_and_rule ----devides an environment power to divide
+Script 10-love_exponent_breath ---displays a power of a number
