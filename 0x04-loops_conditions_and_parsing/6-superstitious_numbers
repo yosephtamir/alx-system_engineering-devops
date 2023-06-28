@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This is to impliment the if else and elif statment
+# This is to impliment case statment
 i=1
 while [ $i -le 20 ]
 do
