@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script is used to print a list of the curretnt directory
+list=$(ls)
+for i in $list;
+do
+    echo "$i"
+done
