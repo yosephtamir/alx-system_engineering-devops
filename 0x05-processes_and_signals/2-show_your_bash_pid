@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This is used to display a list of currently running processes
+# That only have bash
+ps -auxf | grep bash
