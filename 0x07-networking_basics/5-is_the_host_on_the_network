@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This is used to test the speed of the passed
+if [ $# -ne 1 ]
+then
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+    ping -w 5 "$1"
+fi
