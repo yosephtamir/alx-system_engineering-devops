@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script is used to connect to a remote server using a private key
+
+ssh -i "~/.ssh/id_rsa" ubuntu@18.210.20.171
