@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# used to start an apache
+
+service apache2 start
