@@ -1,4 +1,4 @@
-# Install Nginx web server with Puppet
+# Install Nginx
 include stdlib
 
 $locate = 'https://www.youtube.com/watch?v=QH2-TGUlwu4'
