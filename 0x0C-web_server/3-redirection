@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# used to download and setup nginx
+
+
+apt update
+apt install nginx -y
+ufw allow "Nginx HTTP"
+echo "Hello World!" > /var/www/html/index.html
+sed -i '/server_name _;/a \\n        location \/redirect_me { \n            return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\n        }\n' /etc/nginx/sites-available/default
+service nginx restart
