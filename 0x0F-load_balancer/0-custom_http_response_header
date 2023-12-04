@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# used to download and setup nginx
+
+
+apt update
+apt install nginx -y
+ufw allow "Nginx HTTP"
+dir="/etc/nginx/html"
+if [[ ! -e $dir ]]; then
+    mkdir $dir
+fi
+
+touch /etc/nginx/html/404.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+echo "Hello World!" > /var/www/html/index.html
+sed -i '/server_name _;/a \\n        location \/redirect_me { \n            return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\n        }\n' /etc/nginx/sites-available/default
+sed -i '/server_name _;/a \\n        error_page 404 /404.html;\n        location /404 {\n            root /etc/nginx/html;\n            internal;\n        }\n' /etc/nginx/sites-available/default
+
+sed -i '/location \/ {/a \\n\t        add_header X-Served-By "3743-web-02";\n' /etc/nginx/sites-available/default
+
+service nginx restart
