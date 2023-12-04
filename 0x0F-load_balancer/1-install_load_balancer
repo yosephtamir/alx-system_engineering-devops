@@ -3,7 +3,7 @@
 
 apt-get install -y software-properties-common
 add-apt-repository ppa:vbernat/haproxy-2.8 -y
-apt-get install haproxy=2.8.\*
+apt-get install haproxy=2.8.\* -y
 
 
 confg="/etc/haproxy/haproxy.cfg"
