@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#load balancer using haproxy
+
+apt-get install -y software-properties-common
+add-apt-repository ppa:vbernat/haproxy-2.8 -y
+apt-get install haproxy=2.8.\*
+
+
+confg="/etc/haproxy/haproxy.cfg"
+
+fname="frontend http"
+fbind="bind *:80"
+fmode="mode http"
+fdefault="default_backend web-backend"
+frontend="$fname\n\t$fbind\n\t$fmode\n\t$fdefault\n"
+
+bname="backend web-backend"
+bbalance="balance roundrobin"
+bserver1="server 3743-web-01 18.210.20.171:80 check"
+bserver2="server 3743-web-02 52.23.244.251:80 check"
+backend="$bname\n\t$bbalance\n\t$bserver1\n\t$bserver2"
+
+sudo sed -i "$ a $frontend" $confg
+sudo sed -i "$ a $backend" $confg
+
+sudo service haproxy restart
