@@ -38,7 +38,7 @@ file_line { 'Set 301 redirection':
 
 file_line { 'Set X-Served-By header':
   ensure   => 'present',
-  after    => 'location / {',
+  after    => 'http {',
   path     => '/etc/nginx/nginx.conf',
   multiple => true,
   line     => $wbheader,
