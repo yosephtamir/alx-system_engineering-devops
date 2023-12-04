@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# used to download and setup nginx
+# used to configures a brand new Ubuntu machine to the requirements
+# asked in this task
 
 
 apt update
