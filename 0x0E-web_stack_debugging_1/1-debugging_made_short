@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This is used to create a link between sites avalible and sites enabled
+
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+pkill -1 nginx
