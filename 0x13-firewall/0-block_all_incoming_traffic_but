@@ -1,0 +1,18 @@
+#!usr/bin/env bash
+apt install ufw
+systemctl stop ufw
+
+ufw default deny incoming
+ufw default allow outgoing
+
+ufw allow ssh
+ufw allow https
+ufw allow http
+
+systemctl enable ufw
+systemctl start ufw
+
+ufw enable -y
+
+#to check if we setted it successfully
+ufw status
