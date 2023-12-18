@@ -1,0 +1,10 @@
+# Adding the following will redirect all the incoming 8080 tcp to 80 tcp
+# But first we have to uncomment "net/ipv4/ip_forward=1"
+#      from /etc/ufw/sysctl.conf
+#
+#      At the end restarting the ufw using "systemctl restart ufw"
+
+*nat
+:PREROUTING ACCEPT [0:0]
+-A PREROUTING -p tcp --dport 8080 -j REDIRECT --to-port 80
+COMMIT
