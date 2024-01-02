@@ -20,11 +20,10 @@ if __name__ == "__main__":
                             params={"userId": str(count + 1)}).json()
         tasks = []
         for i in todo:
-            newDict = {"task": "", "completed": "", "username": ""}
-
+            newDict = {"username": "", "task": "", "completed": ""}
+            newDict["username"] = req["username"]
             newDict["task"] = i["title"]
             newDict["completed"] = i["completed"]
-            newDict["username"] = req["username"]
             # Used to add each dictionaries to list
             tasks.append(newDict)
         dictfile["{}".format(count + 1)] = tasks
