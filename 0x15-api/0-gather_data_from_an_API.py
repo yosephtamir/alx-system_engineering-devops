@@ -21,4 +21,4 @@ if __name__ == "__main__":
                                                           completed,
                                                           len(todo)))
     for title in completedTaskTitle:
-        print(f"\t{title}")
+        print("\t {}".format(title))
