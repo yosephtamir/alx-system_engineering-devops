@@ -1,6 +1,6 @@
 #!/usr/bin/python3
+"""Used to return the number of subscribers available"""
 from requests import get
-"""Used to return the number of subscribers available."""
 
 
 def number_of_subscribers(subreddit):
