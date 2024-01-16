@@ -1,10 +1,10 @@
 #!/usr/bin/python3
+from requests import get
 """Used to return the number of subscribers available"""
 
 
 def number_of_subscribers(subreddit):
     """ returns the length of subredits subscribers"""
-    from requests import get
 
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
 
