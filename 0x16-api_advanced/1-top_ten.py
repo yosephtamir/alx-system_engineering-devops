@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Used to show top 10 """
+""" Used to show top 10. """
 from requests import get
 
 
