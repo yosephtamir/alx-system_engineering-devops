@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Used to return the number of subscribers available"""
+"""Used to return the number of subscribers available."""
 from requests import get
 
 
