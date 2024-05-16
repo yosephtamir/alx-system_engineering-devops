@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This is used to reload the configuration files in a graceful way
+
+ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
