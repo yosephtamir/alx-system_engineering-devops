@@ -27,10 +27,6 @@ server {
         index index.html index.htm index.nginx-debian.html;
         server_name _;
 
-        location / {
-            root /etc/nginx/html;
-            index index.html index.htm;
-        }
         location /bc/wedding_01 {
             alias /bcard/wedding_01;
             index index.html index.htm;
